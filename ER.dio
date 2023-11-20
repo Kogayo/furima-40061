@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="PcUCJ84KPgmosfgXoS0V" name="ページ1">
-        <mxGraphModel dx="757" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="759" dy="613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -44,9 +44,13 @@
                 <mxCell id="15" value="+購入履歴&#10;+配送先（郵便番号）（ハイフンあり）&#10;+配送先（都道府県）&#10;+配送先（市区町村）&#10;+配送先（番地）&#10;+配送先（建物名）&#10;+電話番号（ハイフン無し）" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="14">
                     <mxGeometry y="30" width="220" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" style="edgeStyle=none;html=1;entryX=-0.012;entryY=0.431;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=ERone;startFill=0;endArrow=ERzeroToOne;endFill=0;" edge="1" parent="1" source="5" target="9">
+                <mxCell id="37" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERzeroToOne;endFill=0;" edge="1" parent="1" source="5" target="9">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="230" y="343" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="140" y="500"/>
+                            <mxPoint x="414" y="500"/>
+                        </Array>
                     </mxGeometry>
                 </mxCell>
             </root>

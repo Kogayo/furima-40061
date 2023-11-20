@@ -49,7 +49,7 @@ Things you may want to cover:
 | order           | references | null: false, foreign_key: true |
 | post_code       | string     | null: false                    |
 | prefecture_id   | integer    | null: false                    |
-| municipalities  | string     | null: false                    |
+| city            | string     | null: false                    |
 | address         | string     | null: false                    |
 | building_name   | string     |                                |
 | phone_number    | string     | null: false                    |
@@ -81,7 +81,7 @@ Things you may want to cover:
 | category_id         | integer    | null: false                    |
 | condition_id        | integer    | null: false                    |
 | prefecture_id       | integer    | null: false                    |
-| day_id              | integer    | null: false                    |
+| shipping_day_id     | integer    | null: false                    |
 | price               | integer    | null: false                    |
 
 ### Association
