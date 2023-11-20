@@ -69,7 +69,7 @@ Things you may want to cover:
 
 - belongs_to :user
 - belongs_to :item
-- belongs_to :address
+- has_one    :address
 
 ## items テーブル(出品情報)
 
@@ -82,7 +82,9 @@ Things you may want to cover:
 | condition_id        | integer    | null: false                    |
 | prefecture_id       | integer    | null: false                    |
 | shipping_day_id     | integer    | null: false                    |
+| shipping_cost_id    | integer    | null: false                    |
 | price               | integer    | null: false                    |
+
 
 ### Association
 
