@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :basic_auth
-
+  before_action :configure_permitted_parameters, if: :devise_controller?
 
   private
 
@@ -9,4 +9,9 @@ class ApplicationController < ActionController::Base
       username == 'kogayou' && password == '1202'
     end
   end
+  
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:nickname, :email, :password, :birth_day, :first_name, :last_name, :read_first, :read_last])
+  end
+
 end
