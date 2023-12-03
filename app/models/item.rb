@@ -30,4 +30,11 @@ with_options numericality: { other_than: 0 } do
   validates :shipping_cost_id
   validates :shipping_day_id
 end
+
+attribute :sold_out, default: false
+
+def sold_out
+  update(sold_out: true)
+end
+
 end
