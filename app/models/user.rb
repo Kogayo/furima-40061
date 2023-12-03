@@ -14,4 +14,7 @@ class User < ApplicationRecord
   validates :first_name,   presence: true, format: { with: VALID_NAME_REGEX, message: "First name is invalid. Input full-width characters" }
   validates :read_last,    presence: true, format: { with: VALID_READ_REGEX, message: "Read last kana is invalid. Input full-width katakana characters" }
   validates :read_first,   presence: true, format: { with: VALID_READ_REGEX, message: "Read first  kana is invalid. Input full-width katakana characters" }
+
+  has_many :orders
+  
 end
