@@ -102,31 +102,26 @@ RSpec.describe OrderAddress, type: :model do
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include("Phone number is invalid")
       end
-
       it '電話番号が空では購入できないこと' do
         @order_address.phone_number = nil
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include("Phone number can't be blank")
       end
-  
       it '電話番号が9桁以下では購入できないこと' do
         @order_address.phone_number = '123456789' # 9桁の例
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include("Phone number is invalid")
       end
-  
       it '電話番号が12桁以上では購入できないこと' do
         @order_address.phone_number = '1234567890123' # 12桁の例
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include("Phone number is invalid")
       end
-  
       it '電話番号に半角数字以外が含まれている場合は購入できないこと' do
         @order_address.phone_number = '123456789a' # 数字以外が含まれている例
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include("Phone number is invalid")
       end
-      
       it 'トークンが空だと保存できないこと' do
         @order_address.token = nil
         @order_address.valid?
