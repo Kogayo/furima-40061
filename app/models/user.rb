@@ -16,5 +16,5 @@ class User < ApplicationRecord
   validates :read_first,   presence: true, format: { with: VALID_READ_REGEX, message: "Read first  kana is invalid. Input full-width katakana characters" }
 
   has_many :orders
-  
+  has_many :items
 end
