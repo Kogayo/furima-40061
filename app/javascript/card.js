@@ -3,6 +3,7 @@ const pay = () => {
   // PAY.JPのテスト用公開鍵を使って、Payjpオブジェクトを作成する
   const publicKey = gon.public_key
   const payjp = Payjp(publicKey)
+  // Payjp.setPublicKey(process.env.PAYJP_PUBLIC_KEY)
   // 支払いに関する要素を作成する
   const elements = payjp.elements();
   const numberElement = elements.create('cardNumber'); // カード番号入力欄
