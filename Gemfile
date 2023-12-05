@@ -97,3 +97,6 @@ gem 'payjp'
 
 gem 'gon'
 
+gem "aws-sdk-s3", require: false
+
+gem 'unicorn', '6.1.0'
