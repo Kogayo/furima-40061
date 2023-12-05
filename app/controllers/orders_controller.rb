@@ -13,7 +13,7 @@ class OrdersController < ApplicationController
       pay_item # メソッド呼び出し
       @order_address.save
       redirect_to root_path
-    else
+    else gon.public_key = ENV["PAYJP_PUBLIC_KEY"]
       render :index, status: :unprocessable_entity
     end
   end
